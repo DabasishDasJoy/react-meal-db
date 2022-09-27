@@ -1,0 +1,25 @@
+.product img {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.product {
+  border: 1px solid gray;
+  border-radius: 15px;
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.btn-order {
+  background-color: orange;
+  color: white;
+  width: 80%;
+  border: none;
+  border-radius: 15px;
+  height: 50px;
+}
