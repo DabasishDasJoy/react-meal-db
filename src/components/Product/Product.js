@@ -1,6 +1,10 @@
 import React from "react";
 import "./Product.css";
-const Product = ({ product: { strMealThumb: img, strMeal: meal } }) => {
+const Product = ({
+  product,
+  product: { strMealThumb: img, strMeal: meal },
+  handleOrder,
+}) => {
   return (
     <div className="product">
       <div className="img-container">
@@ -10,7 +14,9 @@ const Product = ({ product: { strMealThumb: img, strMeal: meal } }) => {
         <h4>{meal}</h4>
       </div>
       <div className="btn-container">
-        <button className="btn-order">Order</button>
+        <button onClick={() => handleOrder(product)} className="btn-order">
+          Order
+        </button>
       </div>
     </div>
   );
